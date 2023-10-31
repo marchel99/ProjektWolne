@@ -107,7 +107,7 @@ int main(void)
   {
 
 
-
+//PRZESUNIECIA BITOWE
 	for (int i = 0; i < 10; i++) {
 		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin << i, GPIO_PIN_SET);
 		HAL_Delay(100);
