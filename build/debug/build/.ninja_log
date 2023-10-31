@@ -28,3 +28,10 @@
 330	692	7204146557548754	ProjektWolne.elf	7ca75c4a4d0cd803
 2	324	7204148420792292	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
 324	684	7204148423510039	ProjektWolne.elf	7ca75c4a4d0cd803
+13	115	7204150824913911	CMakeFiles/ProjektWolne.dir/Core/Startup/startup_stm32l476rgtx.s.obj	f2ebfe6300513e36
+4	423	7204150827966166	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+423	792	7204150830707118	ProjektWolne.elf	7ca75c4a4d0cd803
+5	389	7204173937998732	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+3	362	7204174018535074	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+4	336	7204174488531526	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+337	704	7204174491248969	ProjektWolne.elf	7ca75c4a4d0cd803
