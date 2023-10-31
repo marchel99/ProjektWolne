@@ -24,3 +24,5 @@
 9	354	7204142981947479	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_hal_msp.c.obj	40069671ce2f9e3b
 15	365	7204142982081250	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_it.c.obj	13bf91836f695c47
 366	735	7204142984892665	ProjektWolne.elf	7ca75c4a4d0cd803
+3	329	7204146554895772	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+330	692	7204146557548754	ProjektWolne.elf	7ca75c4a4d0cd803
