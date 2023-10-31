@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,7 +54,20 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void led_set(int led, bool turn_on)
+{
+	GPIO_PinState state;
+ 
+	if (turn_on) {
+		state = GPIO_PIN_SET;
+	} else {
+		state = GPIO_PIN_RESET;
+	}
+ 
+	if (led >= 0 && led < 10) {
+		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin << led, state);
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -66,12 +79,6 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
 
- void TogglePin(GPIO_TypeDef *GPIO_Port, uint16_t Pin) {
-     HAL_GPIO_TogglePin(GPIO_Port, Pin);
-     HAL_Delay(500);
-     HAL_GPIO_TogglePin(GPIO_Port, Pin);
-     HAL_Delay(500);
- }
 
 
 
@@ -103,18 +110,30 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+  while (1) //----------------------------------------------------------------------------------
   {
 
 
+  for (int i = 0; i < 10; i++) {
+    // zapal diodę
+    led_set(i, true);
+    // poczekaj 100 ms
+    HAL_Delay(100);
+    // zgaś diodę
+    led_set(i, false);
+  }
+
+
+
+
 //PRZESUNIECIA BITOWE
-	for (int i = 0; i < 10; i++) {
+/* 	for (int i = 0; i < 10; i++) {
 		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin << i, GPIO_PIN_SET);
 		HAL_Delay(100);
 		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin << i, GPIO_PIN_RESET);
 	}
 
-
+ */
 
 
 
