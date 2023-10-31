@@ -56,16 +56,41 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 void led_set(int led, bool turn_on)
 {
-	GPIO_PinState state;
- 
-	if (turn_on) {
-		state = GPIO_PIN_SET;
-	} else {
-		state = GPIO_PIN_RESET;
-	}
- 
-	if (led >= 0 && led < 10) {
-		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin << led, state);
+	GPIO_PinState state = (turn_on) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+
+	switch (led) {
+	case 0:
+		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, state);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, state);
+		break;
+	case 2:
+		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, state);
+		break;
+	case 3:
+		HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, state);
+		break;
+	case 4:
+		HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, state);
+		break;
+	case 5:
+		HAL_GPIO_WritePin(LD6_GPIO_Port, LD6_Pin, state);
+		break;
+	case 6:
+		HAL_GPIO_WritePin(LD7_GPIO_Port, LD7_Pin, state);
+		break;
+	case 7:
+		HAL_GPIO_WritePin(LD8_GPIO_Port, LD8_Pin, state);
+		break;
+	case 8:
+		HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, state);
+		break;
+	case 9:
+		HAL_GPIO_WritePin(LD10_GPIO_Port, LD10_Pin, state);
+		break;
+	default:
+		break;
 	}
 }
 /* USER CODE END 0 */
