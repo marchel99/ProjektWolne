@@ -1,0 +1,26 @@
+# ninja log v5
+44	1297	7204138858554406	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj	78e4b67cd25b37af
+19	282	7204138848373304	CMakeFiles/ProjektWolne.dir/Core/Src/sysmem.c.obj	b9df794cdc92bb89
+7	420	7204138849649303	CMakeFiles/ProjektWolne.dir/Core/Src/syscalls.c.obj	361a3410492d12d
+13	648	7204138852101175	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_hal_msp.c.obj	40069671ce2f9e3b
+1	717	7204138852681117	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+94	767	7204138853104786	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj	817c921ff5f4f23d
+28	778	7204138853124772	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_it.c.obj	13bf91836f695c47
+66	947	7204138854120468	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj	832f6d6469f42dc3
+36	949	7204138854362471	CMakeFiles/ProjektWolne.dir/Core/Startup/startup_stm32l476rgtx.s.obj	f2ebfe6300513e36
+103	951	7204138854412621	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj	9b4940756a05a887
+119	952	7204138854712103	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj	8a57b948db8cd98a
+80	954	7204138854777827	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj	741327eaac63cd5
+293	1115	7204138856204622	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj	ada24af78f290783
+134	1205	7204138857596594	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj	7a410e63c7f585e8
+55	1234	7204138857858222	CMakeFiles/ProjektWolne.dir/Core/Src/system_stm32l4xx.c.obj	57a5252f322f5309
+649	1455	7204138860191485	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj	7c90891abaa1fa23
+767	1498	7204138860643566	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj	9d435e9060f0762a
+421	1408	7204138859718452	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj	c4f36c0e9da12013
+779	1528	7204138860924800	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj	dd3152df1de7eaba
+718	1553	7204138861184374	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj	9f526b6bb17e37fd
+1553	2201	7204138865823800	ProjektWolne.elf	7ca75c4a4d0cd803
+2	352	7204142981937480	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+9	354	7204142981947479	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_hal_msp.c.obj	40069671ce2f9e3b
+15	365	7204142982081250	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_it.c.obj	13bf91836f695c47
+366	735	7204142984892665	ProjektWolne.elf	7ca75c4a4d0cd803
