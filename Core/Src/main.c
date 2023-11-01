@@ -216,7 +216,10 @@ if (is_button_pressed(0)) {
  
 		// czekamy na zwolnienie przycisku
 		while (is_button_pressed(1)) {}
-	}
+	
+  
+    HAL_Delay(20); 
+  }
 
 
 
@@ -299,11 +302,11 @@ static void MX_GPIO_Init(void)
                           |LD10_Pin|LD11_Pin|LD1_Pin|LD2_Pin
                           |LD3_Pin|LD4_Pin|LD5_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : USER_BUTTON_Pin USER_BUTTON2_Pin */
-  GPIO_InitStruct.Pin = USER_BUTTON_Pin|USER_BUTTON2_Pin;
+  /*Configure GPIO pin : USER_BUTTON_Pin */
+  GPIO_InitStruct.Pin = USER_BUTTON_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  HAL_GPIO_Init(USER_BUTTON_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD6_Pin LD7_Pin LD8_Pin LD9_Pin
                            LD10_Pin LD11_Pin LD1_Pin LD2_Pin
@@ -315,6 +318,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : USER_BUTTON2_Pin */
+  GPIO_InitStruct.Pin = USER_BUTTON2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(USER_BUTTON2_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

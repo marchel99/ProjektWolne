@@ -2,10 +2,10 @@
 44	1297	7204138858554406	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj	78e4b67cd25b37af
 19	282	7204138848373304	CMakeFiles/ProjektWolne.dir/Core/Src/sysmem.c.obj	b9df794cdc92bb89
 7	420	7204138849649303	CMakeFiles/ProjektWolne.dir/Core/Src/syscalls.c.obj	361a3410492d12d
-22	774	7204815064889373	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_hal_msp.c.obj	40069671ce2f9e3b
-2	391	7205527130366951	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+13	342	7205529149850417	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_hal_msp.c.obj	40069671ce2f9e3b
+3	403	7205534447652465	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
 94	767	7204138853104786	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj	817c921ff5f4f23d
-14	828	7204815065476728	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_it.c.obj	13bf91836f695c47
+20	360	7205529150035927	CMakeFiles/ProjektWolne.dir/Core/Src/stm32l4xx_it.c.obj	13bf91836f695c47
 66	947	7204138854120468	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj	832f6d6469f42dc3
 10	88	7204191076290858	CMakeFiles/ProjektWolne.dir/Core/Startup/startup_stm32l476rgtx.s.obj	f2ebfe6300513e36
 103	951	7204138854412621	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj	9b4940756a05a887
@@ -19,4 +19,7 @@
 421	1408	7204138859718452	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj	c4f36c0e9da12013
 779	1528	7204138860924800	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj	dd3152df1de7eaba
 718	1553	7204138861184374	CMakeFiles/ProjektWolne.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj	9f526b6bb17e37fd
-392	807	7205527133701009	ProjektWolne.elf	7ca75c4a4d0cd803
+404	782	7205534450545136	ProjektWolne.elf	7ca75c4a4d0cd803
+12	106	7205535046856822	CMakeFiles/ProjektWolne.dir/Core/Startup/startup_stm32l476rgtx.s.obj	f2ebfe6300513e36
+4	360	7205535049389284	CMakeFiles/ProjektWolne.dir/Core/Src/main.c.obj	9933b525348c0c45
+360	722	7205535052163492	ProjektWolne.elf	7ca75c4a4d0cd803
