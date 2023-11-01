@@ -71,6 +71,8 @@ void Error_Handler(void);
 #define LD10_GPIO_Port GPIOB
 #define LD11_Pin GPIO_PIN_15
 #define LD11_GPIO_Port GPIOB
+#define USER_BUTTON2_Pin GPIO_PIN_8
+#define USER_BUTTON2_GPIO_Port GPIOC
 #define LD1_Pin GPIO_PIN_5
 #define LD1_GPIO_Port GPIOB
 #define LD2_Pin GPIO_PIN_6
