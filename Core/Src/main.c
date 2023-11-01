@@ -59,7 +59,7 @@ static void MX_GPIO_Init(void);
 typedef struct {
 	GPIO_TypeDef* port;
 	uint16_t pin;
-}pin_t;
+}pin_t; 
 
 static const pin_t LD[] = {
 		{ LD1_GPIO_Port, LD1_Pin },
@@ -92,6 +92,17 @@ bool is_button_pressed(void) {
   } else {
     return false;
   }
+
+
+
+
+
+
+
+
+
+
+  
 }
 
 
