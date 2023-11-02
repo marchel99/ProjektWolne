@@ -52,7 +52,7 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE END PFP */
 
-/* Private user code ---------------------------------------------------------*/
+/* Private user code ------------------------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
 
@@ -60,6 +60,7 @@ typedef struct {
 	GPIO_TypeDef* port;
 	uint16_t pin;
 }pin_t; 
+
 
 static const pin_t LD[] = {
 		{ LD1_GPIO_Port, LD1_Pin },
@@ -105,15 +106,6 @@ bool is_button_pressed(int button) {
     return false;
   }
 }
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -172,14 +164,7 @@ int led = 0;
   {
 
 
-/*   for (int i = 0; i < 10; i++) {
-    // zapal diodę
-    led_set(i, true);
-    // poczekaj 100 ms
-    HAL_Delay(100);
-    // zgaś diodę
-    led_set(i, false);
-  } */
+
 
 
 if (is_button_pressed(0)) {
