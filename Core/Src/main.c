@@ -73,6 +73,7 @@ static const pin_t LD[] = {
 		{ LD8_GPIO_Port, LD8_Pin },
 		{ LD9_GPIO_Port, LD9_Pin },
 		{ LD10_GPIO_Port, LD10_Pin },
+    
 };
 
 void led_set(int led, bool turn_on)
