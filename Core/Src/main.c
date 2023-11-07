@@ -74,6 +74,7 @@ static const pin_t LD[] = {
 		{ LD9_GPIO_Port, LD9_Pin },
 		{ LD10_GPIO_Port, LD10_Pin },
     
+
 };
 
 void led_set(int led, bool turn_on)
@@ -84,8 +85,6 @@ void led_set(int led, bool turn_on)
 		HAL_GPIO_WritePin(LD[led].port, LD[led].pin, state);
         }
 }
-
-
 
 
 bool is_button_pressed(int button) {
