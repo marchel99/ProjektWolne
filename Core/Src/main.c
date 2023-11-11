@@ -52,7 +52,7 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE END PFP */
 
-/* Private user code ------------------------------------------------------------------------*/
+/* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
 
@@ -163,7 +163,7 @@ int led = 0;
 
   while (1) //----------------------------------------------------------------------------------
   {
-
+#test
 
 if (is_button_pressed(0)) {
 		// Po wcisnieciu przycisku wylacz diodę
@@ -285,11 +285,11 @@ static void MX_GPIO_Init(void)
                           |LD10_Pin|LD11_Pin|LD1_Pin|LD2_Pin
                           |LD3_Pin|LD4_Pin|LD5_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : USER_BUTTON_Pin */
-  GPIO_InitStruct.Pin = USER_BUTTON_Pin;
+  /*Configure GPIO pins : USER_BUTTON_Pin USER_BUTTON3_Pin */
+  GPIO_InitStruct.Pin = USER_BUTTON_Pin|USER_BUTTON3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(USER_BUTTON_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD6_Pin LD7_Pin LD8_Pin LD9_Pin
                            LD10_Pin LD11_Pin LD1_Pin LD2_Pin
