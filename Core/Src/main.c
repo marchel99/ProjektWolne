@@ -100,8 +100,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-int led = 0;
-  led_set(led, true);
 
 
   while (1) //----------------------------------------------------------------------------------
