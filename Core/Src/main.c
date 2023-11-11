@@ -163,7 +163,7 @@ int led = 0;
 
   while (1) //----------------------------------------------------------------------------------
   {
-//TEST!!!!!!!!!!!333
+//BRANCH MAIN
 
 if (is_button_pressed(0)) {
 		// Po wcisnieciu przycisku wylacz diodę
