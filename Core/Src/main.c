@@ -56,63 +56,6 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 
 
-typedef struct {
-	GPIO_TypeDef* port;
-	uint16_t pin;
-}pin_t; 
-
-
-static const pin_t LD[] = {
-		{ LD1_GPIO_Port, LD1_Pin },
-		{ LD2_GPIO_Port, LD2_Pin },
-		{ LD3_GPIO_Port, LD3_Pin },
-		{ LD4_GPIO_Port, LD4_Pin },
-		{ LD5_GPIO_Port, LD5_Pin },
-		{ LD6_GPIO_Port, LD6_Pin },
-		{ LD7_GPIO_Port, LD7_Pin },
-		{ LD8_GPIO_Port, LD8_Pin },
-		{ LD9_GPIO_Port, LD9_Pin },
-		{ LD10_GPIO_Port, LD10_Pin },
-    
-
-};
-
-void led_set(int led, bool turn_on)
-{
-	GPIO_PinState state = (turn_on) ? GPIO_PIN_SET : GPIO_PIN_RESET;
-
-	if (led >= 0 && led < 10) {
-		HAL_GPIO_WritePin(LD[led].port, LD[led].pin, state);
-        }
-}
-
-
-bool is_button_pressed(int button) {
-  switch (button) {
-  case 0:
-    if (HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin) == GPIO_PIN_RESET) {
-      return true;
-    } else {
-      return false;
-    }
-
-  case 1:
-    if (HAL_GPIO_ReadPin(USER_BUTTON2_GPIO_Port, USER_BUTTON2_Pin) == GPIO_PIN_RESET) {
-      return true;
-    } else {
-      return false;
-    }
-
-  default:
-    return false;
-  }
-}
-
-
-
-
-
-
 
 /* USER CODE END 0 */
 
