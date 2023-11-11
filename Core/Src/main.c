@@ -165,54 +165,6 @@ int led = 0;
   {
 //BRANCH EKSPERYMENTY
 
-if (is_button_pressed(0)) {
-		// Po wcisnieciu przycisku wylacz diodę
-		led_set(led, false);
- 
-		// Zwieksz zawartosc zmiennej led
-		led++;
-		// Sprawdz czy nie przekracza zakresu
-		if (led >= 10) {
-		  led = 0;
-		}
- 
-		// Wlacz kolejna diode
-		led_set(led, true);
- 
-		// czekamy na zwolnienie przycisku
-		while (is_button_pressed(0)) {}
-	}
- 
-	if (is_button_pressed(1)) {
-		// Po wcisnieciu przycisku wylacz diodę
-		led_set(led, false);
- 
-		// Zmniejsz zawartosc zmiennej led
-		led--;
-		// Sprawdz czy nie przekracza zakresu
-		if (led < 0) {
-		  led = 9;
-		}
- 
-		// Wlacz kolejna diode
-		led_set(led, true);
- 
-		// czekamy na zwolnienie przycisku
-		while (is_button_pressed(1)) {}
-	
-  
-    HAL_Delay(20); 
-  }
-
-
-
-
-
-
-
-
-
-
 
     /* USER CODE END WHILE */
 
