@@ -95,6 +95,7 @@ bool is_button_pressed(int button) {
     } else {
       return false;
     }
+
   case 1:
     if (HAL_GPIO_ReadPin(USER_BUTTON2_GPIO_Port, USER_BUTTON2_Pin) == GPIO_PIN_RESET) {
       return true;
@@ -162,9 +163,6 @@ int led = 0;
 
   while (1) //----------------------------------------------------------------------------------
   {
-
-
-
 
 
 if (is_button_pressed(0)) {
