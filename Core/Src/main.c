@@ -55,6 +55,22 @@ static void MX_GPIO_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+void led_set(int led, bool turn_on)
+{
+	GPIO_PinState state;
+ 
+	if (turn_on) {
+		state = GPIO_PIN_SET;
+	} else {
+		state = GPIO_PIN_RESET;
+	}
+ 
+	if (led >= 0 && led < 10) {
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin << led, state);
+	}
+}
+
+
 
 
 typedef struct {
@@ -148,6 +164,7 @@ int main(void)
 
 
 
+<<<<<<< Updated upstream
  // Włączamy diodę na 200ms
 
 
@@ -162,6 +179,15 @@ for (int i = 0; i < 10; i++) {
     HAL_Delay(100);
 
 
+=======
+
+{
+  for (int i = 0; i < 10; i++) {
+    // zapal diodę
+    led_set(i, true);
+    // poczekaj 100 ms
+    HAL_Delay(100);
+>>>>>>> Stashed changes
     // zgaś diodę
     led_set(i, false);
   }
@@ -171,6 +197,11 @@ for (int i = 0; i < 10; i++) {
 
 
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
