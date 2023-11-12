@@ -52,8 +52,48 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE END PFP */
 
-/* Private user code ------------------------------------------------------------------------*/
+/* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
+
+typedef struct {
+	GPIO_TypeDef* port;
+	uint16_t pin;
+}pin_t;
+
+
+static const pin_t LED[] = {
+		{ LD1_GPIO_Port, LD1_Pin },
+		{ LD2_GPIO_Port, LD2_Pin },
+		{ LD3_GPIO_Port, LD3_Pin },
+		{ LD4_GPIO_Port, LD4_Pin },
+		{ LD5_GPIO_Port, LD5_Pin },
+		{ LD6_GPIO_Port, LD6_Pin },
+		{ LD7_GPIO_Port, LD7_Pin },
+		{ LD8_GPIO_Port, LD8_Pin },
+		{ LD9_GPIO_Port, LD9_Pin },
+		{ LD10_GPIO_Port, LD10_Pin }
+};
+
+void led_set(int led, bool turn_on)
+{
+
+  GPIO_PinState state = (turn_on) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+
+	if (led >= 0 && led < 10) {
+		HAL_GPIO_WritePin( LED[led].port ,LED[led].pin, state);
+	}
+}
+
+bool is_button_pressed(void) {
+  if (HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON3_Pin) == GPIO_PIN_RESET) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 
 
 
@@ -105,6 +145,30 @@ int main(void)
   while (1) //----------------------------------------------------------------------------------
   {
 //BRANCH EKSPERYMENTY
+
+
+
+ // Włączamy diodę na 200ms
+
+
+for (int i = 0; i < 10; i++) {
+
+
+    // zapal diodę
+    led_set(i, true);
+
+
+    // poczekaj 100 ms
+    HAL_Delay(100);
+
+
+    // zgaś diodę
+    led_set(i, false);
+  }
+
+
+
+
 
 
     /* USER CODE END WHILE */
@@ -178,11 +242,11 @@ static void MX_GPIO_Init(void)
                           |LD10_Pin|LD11_Pin|LD1_Pin|LD2_Pin
                           |LD3_Pin|LD4_Pin|LD5_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : USER_BUTTON_Pin */
-  GPIO_InitStruct.Pin = USER_BUTTON_Pin;
+  /*Configure GPIO pins : USER_BUTTON_Pin USER_BUTTON3_Pin */
+  GPIO_InitStruct.Pin = USER_BUTTON_Pin|USER_BUTTON3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(USER_BUTTON_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD6_Pin LD7_Pin LD8_Pin LD9_Pin
                            LD10_Pin LD11_Pin LD1_Pin LD2_Pin
