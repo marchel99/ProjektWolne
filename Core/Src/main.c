@@ -56,14 +56,12 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 
 
-
-
-
-
 typedef struct {
 	GPIO_TypeDef* port;
 	uint16_t pin;
 }pin_t;
+
+
 
 
 static const pin_t LED[] = {
@@ -182,7 +180,7 @@ if (is_button_pressed(0)) {
  
 		// czekamy na zwolnienie przycisku
 		while (is_button_pressed(0)) {}
-    
+
 	}
 
  
