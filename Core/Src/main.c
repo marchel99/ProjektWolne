@@ -148,7 +148,7 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+  /* USER CODE END SysInit */     
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
@@ -182,7 +182,9 @@ if (is_button_pressed(0)) {
  
 		// czekamy na zwolnienie przycisku
 		while (is_button_pressed(0)) {}
+    
 	}
+
  
 	if (is_button_pressed(1)) {
 		// Po wcisnieciu przycisku wylacz diodę
