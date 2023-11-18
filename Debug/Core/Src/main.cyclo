@@ -1,6 +1,0 @@
-main.c:77:6:led_set	3
-main.c:89:6:is_button_pressed	5
-main.c:130:5:main	7
-main.c:242:6:SystemClock_Config	4
-main.c:287:13:MX_GPIO_Init	1
-main.c:337:6:Error_Handler	1
