@@ -115,7 +115,16 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_RTC_Init();
+
+
+
   /* USER CODE BEGIN 2 */
+RTC_DateTypeDef today;
+today.Year = 23;
+today.Month = 11;
+today.Date = 19;
+today.WeekDay = RTC_WEEKDAY_TUESDAY;
+HAL_RTC_SetDate(&hrtc, &today, RTC_FORMAT_BIN);
 
   /* USER CODE END 2 */
 
@@ -145,7 +154,8 @@ if (is_button_pressed()) {
 HAL_RTC_GetTime(&hrtc, &time, RTC_FORMAT_BIN);
 HAL_RTC_GetDate(&hrtc, &date, RTC_FORMAT_BIN);
 
-printf("Aktualny czas: %02d:%02d:%02d\n", time.Hours, time.Minutes, time.Seconds);
+printf("RTC: %04d-%02d-%02d, %02d:%02d:%02d\n", 2000 + date.Year, date.Month, date.Date, time.Hours, time.Minutes, time.Seconds);
+
 HAL_Delay(200);
 
 
@@ -179,11 +189,16 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 
+  /** Configure LSE Drive Capability
+  */
+  HAL_PWR_EnableBkUpAccess();
+  __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_LOW);
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_MSI;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.MSICalibrationValue = 0;
   RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
@@ -206,6 +221,10 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
+  /** Enable MSI Auto calibration
+  */
+  HAL_RCCEx_EnableMSIPLLMode();
 }
 
 /**
