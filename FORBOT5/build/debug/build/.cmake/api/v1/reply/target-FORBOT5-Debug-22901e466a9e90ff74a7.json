@@ -162,7 +162,8 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26
 			]
 		},
 		{
@@ -280,7 +281,8 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26
 			]
 		},
 		{
@@ -381,6 +383,12 @@
 			"backtrace" : 7,
 			"compileGroupIndex" : 0,
 			"path" : "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_iwdg.c",
 			"sourceGroupIndex" : 0
 		},
 		{
