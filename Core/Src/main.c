@@ -165,7 +165,6 @@ int main(void)
   led_set(led, true);
   while (1) //----------------------------------------------------------------------------------
   {
-//BRANCH EKSPERYMENTY
 
 if (is_button_pressed(0)) {
 		// Po wcisnieciu przycisku wylacz diodę
