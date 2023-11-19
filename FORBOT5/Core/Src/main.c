@@ -127,6 +127,21 @@ int main(void)
 RTC_TimeTypeDef time;
 RTC_DateTypeDef date;
 
+// jeśli naciśnięto przycisk
+if (is_button_pressed()) {
+	// ważne: nieużywane pola muszą być wyzerowane
+	RTC_TimeTypeDef new_time = {0};
+ 
+	// czekamy na zwolnienie przycisku
+	while (is_button_pressed()) {}
+ 
+	// ustawiamy godzinę 07:45:00
+	new_time.Hours = 7;
+	new_time.Minutes = 45;
+	new_time.Seconds = 0;
+	HAL_RTC_SetTime(&hrtc, &new_time, RTC_FORMAT_BIN);
+}
+
 HAL_RTC_GetTime(&hrtc, &time, RTC_FORMAT_BIN);
 HAL_RTC_GetDate(&hrtc, &date, RTC_FORMAT_BIN);
 
