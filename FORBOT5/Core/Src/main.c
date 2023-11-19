@@ -145,6 +145,12 @@ uint32_t last_ms = HAL_GetTick();
   while (1)
   {
 
+
+uint32_t now = HAL_GetTick();
+	if (now - last_ms >= 500) {
+		  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+		  last_ms = now;
+	  }
 /*
 
 
