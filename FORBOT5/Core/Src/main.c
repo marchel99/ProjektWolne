@@ -123,6 +123,24 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+RTC_TimeTypeDef time;
+RTC_DateTypeDef date;
+
+HAL_RTC_GetTime(&hrtc, &time, RTC_FORMAT_BIN);
+HAL_RTC_GetDate(&hrtc, &date, RTC_FORMAT_BIN);
+
+printf("Aktualny czas: %02d:%02d:%02d\n", time.Hours, time.Minutes, time.Seconds);
+HAL_Delay(200);
+
+
+
+
+
+
+
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
