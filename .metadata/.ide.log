@@ -641,3 +641,106 @@
 2023-11-19 01:45:54,272 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 2152mS.
 2023-11-19 01:45:54,273 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 1mS.
 2023-11-19 01:45:54,283 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
+2023-11-19 02:07:05,375 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 866104560 Bytes (1066401792)
+2023-11-19 02:07:06,700 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 895464688 Bytes (1066401792)
+2023-11-19 02:07:13,106 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 745855728 Bytes (1066401792)
+2023-11-19 02:07:13,540 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-19 02:07:13,540 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-19 02:07:13,540 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-11-19 02:07:13,540 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-19 02:07:13,540 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-19 02:07:13,541 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-19 02:07:13,542 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.1.202304191431\\db\
+2023-11-19 02:07:13,732 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\license.tmp_save
+2023-11-19 02:07:13,967 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\license.tmp
+2023-11-19 02:07:14,010 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\gpio.tmp_save
+2023-11-19 02:07:14,172 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\gpio.tmp
+2023-11-19 02:07:14,317 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_it.c_save
+2023-11-19 02:07:14,616 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_it.c
+2023-11-19 02:07:14,627 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_it.h_save
+2023-11-19 02:07:14,706 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_it.h
+2023-11-19 02:07:14,850 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_hal_msp.c_save
+2023-11-19 02:07:15,056 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_hal_msp.c
+2023-11-19 02:07:15,069 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\system.tmp_save
+2023-11-19 02:07:15,164 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\system.tmp
+2023-11-19 02:07:15,198 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-11-19 02:07:15,332 [INFO] CodeEngine:335 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_hal_conf.h
+2023-11-19 02:07:15,399 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\main.h_save
+2023-11-19 02:07:15,509 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\main.h
+2023-11-19 02:07:15,529 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\main.c_save
+2023-11-19 02:07:15,677 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\main.c
+2023-11-19 02:07:16,758 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 452mS.
+2023-11-19 02:07:16,771 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-11-19 02:07:17,219 [INFO] ConfigFileManager:1483 - The Die is : DIE415
+2023-11-19 02:07:18,852 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 2081mS.
+2023-11-19 02:07:18,854 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 2mS.
+2023-11-19 02:07:18,861 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 1mS.
+2023-11-19 02:43:11,160 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 571522560 Bytes (1073741824)
+2023-11-19 02:43:12,555 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 601344784 Bytes (1073741824)
+2023-11-19 02:43:12,845 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 686473992 Bytes (1073741824)
+2023-11-19 02:43:13,195 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-19 02:43:13,195 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-19 02:43:13,195 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-11-19 02:43:13,195 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-19 02:43:13,195 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-19 02:43:13,196 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-19 02:43:13,197 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.1.202304191431\\db\
+2023-11-19 02:43:13,405 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\license.tmp_save
+2023-11-19 02:43:13,639 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\license.tmp
+2023-11-19 02:43:13,682 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\gpio.tmp_save
+2023-11-19 02:43:13,845 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\gpio.tmp
+2023-11-19 02:43:13,966 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_it.c_save
+2023-11-19 02:43:14,181 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_it.c
+2023-11-19 02:43:14,191 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_it.h_save
+2023-11-19 02:43:14,303 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_it.h
+2023-11-19 02:43:14,331 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_hal_msp.c_save
+2023-11-19 02:43:14,454 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_hal_msp.c
+2023-11-19 02:43:14,462 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\system.tmp_save
+2023-11-19 02:43:14,543 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\system.tmp
+2023-11-19 02:43:14,569 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-11-19 02:43:14,751 [INFO] CodeEngine:335 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_hal_conf.h
+2023-11-19 02:43:14,891 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\main.h_save
+2023-11-19 02:43:15,005 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\main.h
+2023-11-19 02:43:15,026 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\main.c_save
+2023-11-19 02:43:15,176 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\main.c
+2023-11-19 02:43:16,270 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 329mS.
+2023-11-19 02:43:16,274 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-11-19 02:43:16,700 [INFO] ConfigFileManager:1483 - The Die is : DIE415
+2023-11-19 02:43:18,414 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 2140mS.
+2023-11-19 02:43:18,415 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 1mS.
+2023-11-19 02:43:18,422 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
+2023-11-19 02:59:14,396 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 624197648 Bytes (1073741824)
+2023-11-19 02:59:15,609 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 653557776 Bytes (1073741824)
+2023-11-19 02:59:15,908 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 742963088 Bytes (1073741824)
+2023-11-19 02:59:16,269 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: IWDG
+2023-11-19 02:59:16,270 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-19 02:59:16,270 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-19 02:59:16,270 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-11-19 02:59:16,270 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-19 02:59:16,270 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-19 02:59:16,270 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-19 02:59:16,273 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.1.202304191431\\db\
+2023-11-19 02:59:16,628 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\license.tmp_save
+2023-11-19 02:59:16,749 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\license.tmp
+2023-11-19 02:59:16,804 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\gpio.tmp_save
+2023-11-19 02:59:16,952 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\gpio.tmp
+2023-11-19 02:59:17,244 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_it.c_save
+2023-11-19 02:59:17,461 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_it.c
+2023-11-19 02:59:17,483 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_it.h_save
+2023-11-19 02:59:17,570 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_it.h
+2023-11-19 02:59:17,608 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_hal_msp.c_save
+2023-11-19 02:59:17,792 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\stm32l4xx_hal_msp.c
+2023-11-19 02:59:17,808 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\system.tmp_save
+2023-11-19 02:59:17,882 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\MXTmpFiles\system.tmp
+2023-11-19 02:59:17,930 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-11-19 02:59:18,060 [INFO] CodeEngine:335 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\stm32l4xx_hal_conf.h
+2023-11-19 02:59:18,147 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\main.h_save
+2023-11-19 02:59:18,260 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Inc\main.h
+2023-11-19 02:59:18,290 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\main.c_save
+2023-11-19 02:59:18,463 [INFO] CodeEngine:279 - Generated code: C:\Users\mrchl\STM32CubeIDE\workspace_1.12.1\ProjektWolne\FORBOT5\Core\Src\main.c
+2023-11-19 02:59:19,630 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 425mS.
+2023-11-19 02:59:19,637 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-11-19 02:59:20,196 [INFO] ConfigFileManager:1483 - The Die is : DIE415
+2023-11-19 02:59:22,584 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 2946mS.
+2023-11-19 02:59:22,585 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 1mS.
+2023-11-19 02:59:22,592 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
